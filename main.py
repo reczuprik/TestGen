@@ -76,7 +76,9 @@ def generate_test_case(model, tokenizer, new_requirement, max_seq_len):
         seq_new_requirement, maxlen=max_seq_len, padding="post"
     )
 
-    states_value = model.predict(pad_new_requirement)
+    states_value = model.predict(
+        [pad_new_requirement, np.zeros((1, 1))]
+    )  # Provide dummy input for decoder
 
     target_seq = np.zeros((1, 1))
     target_seq[0, 0] = tokenizer.word_index.get("startseq", 0)
@@ -147,8 +149,6 @@ def main():
         raw_test_case = generate_test_case(model, tokenizer, req, max_seq_len)
         processed_test_case = post_process(raw_test_case)
         generated_test_cases.append(processed_test_case)
-        print(req)
-        print(processed_test_case)
 
     output_data = pd.DataFrame(
         {"requirement": new_requirements, "generated_test_case": generated_test_cases}

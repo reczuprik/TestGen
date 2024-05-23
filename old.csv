@@ -1,5 +1,29 @@
 requirement,test_case
-"User logs into the system","Given the user is on the login page\nWhen the user enters valid credentials\nThen the user should be redirected to the dashboard"
-"User resets the password","Given the user is on the forgot password page\nWhen the user enters their registered email\nAnd the user clicks on the reset button\nThen the user should receive a password reset link in their email"
-"User updates profile information","Given the user is logged in\nWhen the user navigates to the profile page\nAnd the user updates their profile information\nThen the profile information should be saved successfully"
-
+User should be able to log in with email and password,Given a user with valid credentials, When the user logs in with email "user@example.com" and password "password123", Then the user should be logged in successfully.
+User should be able to reset password,Given a user with a forgotten password, When the user requests to reset the password, Then an email with instructions to reset the password should be sent to the user's email address.
+User should be able to view profile,Given a logged-in user, When the user navigates to the profile page, Then the user should see their profile information.
+User should be able to update profile,Given a logged-in user, When the user updates their profile information, Then the changes should be saved successfully.
+User should be able to upload profile picture,Given a logged-in user, When the user uploads a new profile picture, Then the new picture should be displayed on the profile page.
+User should be able to search for products,Given a user on the home page, When the user enters a search query and clicks the search button, Then the user should see relevant products displayed.
+User should be able to add products to cart,Given a user viewing a product, When the user clicks the "Add to Cart" button, Then the product should be added to the user's shopping cart.
+User should be able to view shopping cart,Given a user with items in their shopping cart, When the user navigates to the shopping cart page, Then the user should see the list of items in their cart.
+User should be able to remove product from cart,Given a user with items in their shopping cart, When the user clicks the "Remove" button next to a product, Then the product should be removed from the cart.
+User should be able to proceed to checkout,Given a user with items in their shopping cart, When the user clicks the "Proceed to Checkout" button, Then the user should be taken to the checkout page.
+User should be able to select payment method,Given a user at the checkout page, When the user selects a payment method, Then the selected payment method should be highlighted.
+User should be able to complete order,Given a user at the checkout page, When the user confirms the order, Then the order should be processed successfully.
+User should be able to track order status,Given a user with a completed order, When the user navigates to the order tracking page, Then the user should see the status of their order.
+User should be able to contact customer support,Given a user on the contact page, When the user fills out the contact form and submits it, Then the user should receive a confirmation email.
+User should be able to view FAQ,Given a user on the FAQ page, When the user clicks on a question, Then the answer to the question should be displayed.
+User should be able to view order history,Given a logged-in user, When the user navigates to the order history page, Then the user should see a list of their previous orders.
+User should be able to leave product reviews,Given a user who has purchased a product, When the user navigates to the product page, Then the user should see an option to leave a review.
+User should be able to view product details,Given a user on the product page, When the user clicks on a product, Then the user should see detailed information about the product.
+User should be able to change language settings,Given a user on the settings page, When the user selects a different language, Then the page should be displayed in the selected language.
+User should be able to subscribe to newsletter,Given a user on the newsletter page, When the user enters their email address and clicks the subscribe button, Then the user should be subscribed to the newsletter.
+User should be able to unsubscribe from newsletter,Given a user subscribed to the newsletter, When the user clicks the unsubscribe link in an email, Then the user should be unsubscribed from the newsletter.
+User should be able to view privacy policy,Given a user on the privacy policy page, When the user scrolls through the page, Then the user should see information about the privacy policy.
+User should be able to view terms of service,Given a user on the terms of service page, When the user clicks on a section, Then the user should see the corresponding terms of service.
+User should be able to view shipping information,Given a user on the shipping information page, When the user enters their location, Then the user should see shipping options and estimated delivery times.
+User should be able to add items to wishlist,Given a user viewing a product, When the user clicks the "Add to Wishlist" button, Then the product should be added to the user's wishlist.
+User should be able to view wishlist,Given a user with items in their wishlist, When the user navigates to the wishlist page, Then the user should see the list of items in their wishlist.
+User should be able to share product on social media,Given a user on the product page, When the user clicks the social media sharing button, Then the user should be able to share the product on their social media accounts.
+User should be able to compare products,Given a user viewing multiple products, When the user selects the "Compare" option for two products, Then the user should see a comparison table of the selected products.
