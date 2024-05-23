@@ -1,0 +1,5 @@
+requirement,test_case
+"User logs into the system","Given the user is on the login page\nWhen the user enters valid credentials\nThen the user should be redirected to the dashboard"
+"User resets the password","Given the user is on the forgot password page\nWhen the user enters their registered email\nAnd the user clicks on the reset button\nThen the user should receive a password reset link in their email"
+"User updates profile information","Given the user is logged in\nWhen the user navigates to the profile page\nAnd the user updates their profile information\nThen the profile information should be saved successfully"
+
