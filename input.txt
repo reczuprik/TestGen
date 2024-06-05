@@ -1,0 +1,24 @@
+import random
+
+# Sample lists of automotive-related terms for generating requirements
+system_components = ["braking system", "steering system", "suspension system", "engine control unit", "transmission system", "fuel injection system", "air conditioning system", "entertainment system", "navigation system", "collision detection system"]
+user_actions = ["accelerate", "brake", "turn left", "turn right", "change gears", "park", "adjust temperature", "play music", "navigate to", "detect obstacles"]
+system_responses = ["should activate", "should deactivate", "should adjust", "should display", "should alert", "should engage", "should disengage", "should synchronize", "should initiate", "should terminate"]
+conditions = ["if the vehicle speed exceeds", "when the engine temperature rises above", "if the battery voltage drops below", "when the ambient light level decreases below", "if the brake pressure exceeds", "when the steering angle exceeds", "if the fuel level is below", "when the vehicle is in reverse gear", "if the external temperature is above", "when the GPS signal is lost"]
+
+# Generate 1000 random automotive requirement texts
+requirement_texts = []
+for _ in range(1000):
+    system_component = random.choice(system_components)
+    user_action = random.choice(user_actions)
+    system_response = random.choice(system_responses)
+    condition = random.choice(conditions)
+    value = random.randint(50, 150)  # Random value for conditions
+    requirement_text = f"As a driver, I want the {system_component} to {user_action} {condition} {value}, so that it {system_response}"
+    requirement_texts.append(requirement_text)
+
+# Sample input text for prediction
+sample_input_text = requirement_texts[0]
+
+# Print one sample input text
+print("Sample Input Text:", sample_input_text)
