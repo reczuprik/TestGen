@@ -1,0 +1,19 @@
+[
+  {
+    "project": "Example Project",
+    "requirements": [
+      {
+        "id": 1,
+        "text": "The system should allow users to create new accounts by providing their name, email, and password."
+      },
+      {
+        "id": 2,
+        "text": "When the user clicks the 'Submit' button on the registration form, the system must validate the provided information and display an error message if any required field is missing or invalid."
+      },
+      {
+        "id": 3,
+        "text": "After a successful registration, the system should send a confirmation email to the user's provided email address."
+      }
+    ]
+  }
+]

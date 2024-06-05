@@ -1,0 +1,4 @@
+The system should display an error message when the user enters an invalid password.
+When the user clicks the login button, the system must validate the credentials against the database.
+If the user's account is locked, then the system should display a message indicating that the account is locked.
+After the user logs in successfully, the system should redirect them to the home page.
